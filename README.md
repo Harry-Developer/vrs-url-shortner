@@ -5,6 +5,11 @@ Simple url shortner called vrs, provided with ability to create your own slug or
 
 Built using NodeJS for the backend with the express framework, VueJS frontend alongside a mongoDB database,
 
+## Screenshot
+
+![screenshot](screenshot.png)
+
+
 ## Install
 
 Clone the project, then run:
