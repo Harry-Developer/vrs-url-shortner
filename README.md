@@ -5,7 +5,7 @@ Simple url shortner called vrs, provided with ability to create your own slug or
 
 Built using NodeJS for the backend with the express framework, VueJS frontend alongside a mongoDB database,
 
-## Screenshot
+## Screenshot - (Note: vrs.ws would be a prefered domain to replace 127.0.0.1 😉)
 
 ![screenshot](screenshot.png)
 
