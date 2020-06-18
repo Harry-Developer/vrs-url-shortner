@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> vrs | url shortner </title>
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <main id="app">
+        <div class="form-div">
+            <form class="login-form" @submit.prevent="createURL()">
+                <h1> vrs </h1>
+                <div class="form-control">
+                    <input 
+                        v-model="url" 
+                        name="url" 
+                        id="url" 
+                        placeholder=" "
+                        required
+                    />
+                    <label for="url"> url </label>
+                </div>
+                <div class="form-control">
+                    <input 
+                        v-model="slug" 
+                        name="slug" 
+                        id="slug"
+                        placeholder=" "
+                    />
+                    <label for="slug"> slug </label>
+                </div>
+                <button type="submit" class="btn"> Create </button>
+                <span v-if="created">
+                    <p> Your short url is: </p>
+                    <a :href="created"> {{created}} </a></p>
+                </span>
+                <span v-if="error">
+                    <p> Error: </p>
+                    <a :href="created"> {{error.error}}</a></p>
+                </span>
+            </form>
+        </div>
+      
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/app.js"></script>
+
+</body>
+</html>
