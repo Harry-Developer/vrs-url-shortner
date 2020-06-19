@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charse="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> vrs | url shortner </title>
     <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
+    <header>
+        <a href="/about.html"> about </a>
+        <a href="/stats.html"> stats </a>
+    </header>
     <main id="app">
         <div class="form-div">
             <form class="login-form" @submit.prevent="createURL()">
@@ -31,18 +35,21 @@
                     <label for="slug"> slug </label>
                 </div>
                 <button type="submit" class="btn"> Create </button>
+                <a href="https://github.com/Harry-Developer/vrs-url-shortner" class="github"> github </a>
                 <span v-if="created">
                     <p> Your short url is: </p>
-                    <a :href="created"> {{created}} </a></p>
+                    <a v-bind:href="'http://127.0.0.1:1337/' + created"> vrs.ws/{{created}} </a></p>
                 </span>
                 <span v-if="error">
                     <p> Error: </p>
-                    <a :href="created"> {{error.error}}</a></p>
+                    <a :href="error"> {{error.error}}</a></p>
                 </span>
             </form>
+
         </div>
-      
+
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="/js/app.js"></script>
 
