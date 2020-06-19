@@ -10,7 +10,7 @@ const app = new Vue({
         async createURL() {
             const response = await fetch('/url', {
                 method: 'POST',
-                headers: {
+                headers: { 
                     'content-type': 'application/json',
                 },
                 body: JSON.stringify({
@@ -26,7 +26,7 @@ const app = new Vue({
                 this.created = null;
             }
             else  {
-                this.created = 'http://127.0.0.1:1337/' + res.slug;
+                this.created = res.slug;
                 this.error = null
             }
         }
