@@ -9,10 +9,10 @@
 </head>
 <body>
 
-    <header>
-        <a href="/index.html"> vrs  </a>
+    <header id="header">
+        <a href="/index.html"> vrs </a>
         <a href="/stats.html"> stats </a>
-        <a href="/stats.html"> dark-mode </a>
+        <a href="#" @click.prevent="darkThemeSwitch()"> dark-mode </a>
     </header>
 
     <main>
@@ -33,6 +33,9 @@
             <a href="https://github.com/Harry-Developer/vrs-url-shortner" class="github"> github </a>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/header.js"></script>
 
     
 </body>

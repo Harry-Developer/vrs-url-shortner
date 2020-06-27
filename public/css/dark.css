@@ -13,6 +13,11 @@ span p { color: #A3C3D9; }
     box-shadow: 0 0.4px 0.4px rgb(136, 57, 85), 0 1px 1px rgb(136, 57, 85), 0 2.1px 2.1px rgb(172, 89, 119), 0 4.4px 4.4px rgb(136, 57, 85), 0 12px 12px rgb(136, 57, 85) !important;
 }
 
+.about { 
+    background-color: #883955 !important; 
+    box-shadow: 0 0.4px 0.4px rgb(136, 57, 85), 0 1px 1px rgb(136, 57, 85), 0 2.1px 2.1px rgb(172, 89, 119), 0 4.4px 4.4px rgb(136, 57, 85), 0 12px 12px rgb(136, 57, 85) !important;
+}
+
 .btn { border: 2px solid #A3C3D9 !important; }
 .btn::before { background: linear-gradient(120deg, transparent, rgba(163, 195, 217, 0.5), transparent) !important;}
 
