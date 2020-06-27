@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="/about.html"> about </a>
         <a href="/stats.html"> stats </a>
-        <a href="/stats.html"> dark-mode </a>
+        <a href="#" @click.prevent="darkThemeSwitch()"> dark-mode </a>
     </header>
+
     <main id="app">
         <div class="form-div">
             <form class="login-form" @submit.prevent="createURL()">
@@ -53,6 +54,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/header.js"></script>
 
 </body>
 </html>
